@@ -1,0 +1,23 @@
+{
+  "last": "RELAINCE|EQ|NSE",
+  "theme": "dark",
+  "watchlists": {
+    "default": [
+      "NIFTY 50|EQ|NSE",
+      "RELAINCE|EQ|NSE",
+      "SBIN|EQ|NSE",
+      "Section1|BOB|EQ|NSE",
+      "Section1|HDFCBANK|EQ|NSE",
+      "Section1|ICICIBANK|EQ|NSE"
+    ],
+    "ronit2": [
+      "BANKEX25NOVFUT|FUT|BFO",
+      "BANKEX25DECFUT|FUT|BFO",
+      "BANKEX26JANFUT|FUT|BFO",
+      "SENSEX25NOVFUT|FUT|BFO",
+      "SENSEX25DECFUT|FUT|BFO",
+      "SENSEX26JANFUT|FUT|BFO"
+    ]
+  },
+  "watchlist": []
+}
