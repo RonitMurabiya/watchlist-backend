@@ -1,5 +1,5 @@
 {
-  "last": "RELAINCE|EQ|NSE",
+  "last": "Dashboard|hello|BANKEX26JANFUT|FUT|BFO",
   "theme": "dark",
   "watchlists": {
     "default": [
@@ -8,16 +8,27 @@
       "SBIN|EQ|NSE",
       "Section1|BOB|EQ|NSE",
       "Section1|HDFCBANK|EQ|NSE",
-      "Section1|ICICIBANK|EQ|NSE"
+      "Section1|ICICIBANK|EQ|NSE",
+      "Section1|SENSEX25DECFUT|FUT|BFO",
+      "Section1|SENSEX26JANFUT|FUT|BFO",
+      "Section1|SENSEX5025NOVFUT|FUT|BFO",
+      "Section1|SENSEX5025DECFUT|FUT|BFO"
     ],
-    "ronit2": [
-      "BANKEX25NOVFUT|FUT|BFO",
-      "BANKEX25DECFUT|FUT|BFO",
-      "BANKEX26JANFUT|FUT|BFO",
-      "SENSEX25NOVFUT|FUT|BFO",
+    "hello": [
       "SENSEX25DECFUT|FUT|BFO",
-      "SENSEX26JANFUT|FUT|BFO"
+      "SENSEX26JANFUT|FUT|BFO",
+      "SENSEX5025NOVFUT|FUT|BFO",
+      "SENSEX5025DECFUT|FUT|BFO",
+      "BANKEX25DECFUT|FUT|BFO",
+      "BANKEX26JANFUT|FUT|BFO"
     ]
   },
-  "watchlist": []
+  "tabs": [
+    "Dashboard|default|Section1|HDFCBANK|EQ|NSE",
+    "Dashboard|default|Section1|ICICIBANK|EQ|NSE",
+    "Dashboard|hello|SENSEX5025NOVFUT|FUT|BFO",
+    "Dashboard|hello|SENSEX5025DECFUT|FUT|BFO",
+    "Dashboard|hello|BANKEX25DECFUT|FUT|BFO",
+    "Dashboard|hello|BANKEX26JANFUT|FUT|BFO"
+  ]
 }

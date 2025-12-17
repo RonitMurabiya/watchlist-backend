@@ -52,6 +52,7 @@ const WATCHLIST_FALLBACK = {
   watchlists: {
     default: [],
   },
+  tabs: [],
 };
 
 // ---------------- GET WATCHLIST ----------------
@@ -84,6 +85,31 @@ app.post("/api/watchlist/update", (req, res) => {
     status: "success",
     message: "Watchlist updated",
     watchlists: json.watchlists,
+  });
+});
+
+// ---------------- UPDATE TABS ----------------
+app.post("/api/tabs/update", (req, res) => {
+  const newTabs = req.body.tabs;
+  const activeTab = req.body.activeTab; // Optionally save active tab
+
+  if (!Array.isArray(newTabs)) {
+    return res.status(400).json({ error: "tabs must be an array" });
+  }
+
+  const json = readJsonSafe(dataFile, WATCHLIST_FALLBACK);
+  json.tabs = newTabs;
+
+  if (activeTab !== undefined) {
+    json.last = activeTab; // Saving active tab as 'last' or separate field
+  }
+
+  writeJsonSafe(dataFile, json);
+
+  res.json({
+    status: "success",
+    message: "Tabs updated",
+    tabs: json.tabs,
   });
 });
 
